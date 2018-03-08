@@ -18,8 +18,6 @@ make install
 
 cd /shared
 
-echo AKIAJ4I7DART6NDIO42A:I5fXJxnJjF0Yk5XUU1w75V+7C6ejU0QIJg8IIG/M > /shared/passwd-s3fs
-
 chmod 600 /shared/passwd-s3fs
 
 s3fs cgix-nc-rna-seq /shared/s3mnt -o passwd_file=/shared/passwd-s3fs -o umask=0000
