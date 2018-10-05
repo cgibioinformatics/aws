@@ -1,5 +1,5 @@
 sudo s3fs cgix-nc-rna-seq /home/ubuntu/s3mnt -o passwd_file=/home/ubuntu/passwd-s3fs,allow_other,uid=1000,gid=1000,umask=0000 
-sudo add-apt-repository ppa:openjdk-r/ppa
+echo Y | sudo add-apt-repository ppa:openjdk-r/ppa
 echo Y | sudo apt-get update
 echo Y | sudo apt-get install openjdk-8-jdk
 echo Y | sudo apt-get install libwww-perl libdatetime-perl fastqc picard
