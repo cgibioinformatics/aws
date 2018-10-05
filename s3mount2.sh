@@ -6,3 +6,4 @@ echo Y | sudo apt-get install libwww-perl libdatetime-perl fastqc picard
 /home/ubuntu/s3mnt/aws-scripts-mon/mon-put-instance-data.pl --mem-util --mem-used --mem-avail --auto-scaling
 export PATH=$PATH:/shared/STAR
 export PATH=$PATH:/shared/cufflink
+export PATH=$PATH:/shared/
