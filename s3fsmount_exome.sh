@@ -9,4 +9,3 @@ echo Y | sudo pip install pandas
 export PATH=$PATH:/shared/STAR
 export PATH=$PATH:/shared/cufflink
 export PATH=$PATH:/shared/
-export PATH=$PATH:/shared/bwa-0.7.17/bwa
