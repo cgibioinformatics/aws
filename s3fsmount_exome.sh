@@ -2,7 +2,7 @@ sudo s3fs cgix-nc-exome-seq /home/ubuntu/s3mnt -o passwd_file=/home/ubuntu/passw
 echo Y | sudo add-apt-repository ppa:openjdk-r/ppa
 echo Y | sudo apt-get update
 echo Y | sudo apt-get install openjdk-8-jdk
-echo Y | sudo apt-get install libwww-perl libdatetime-perl fastqc python-numpy python-pandas
+echo Y | sudo apt-get install libwww-perl libdatetime-perl fastqc bedtools python-numpy python-pandas
 /home/ubuntu/s3mnt/aws-scripts-mon/mon-put-instance-data.pl --mem-util --mem-used --mem-avail --auto-scaling
 export PATH=$PATH:/shared/STAR
 export PATH=$PATH:/shared/cufflink
