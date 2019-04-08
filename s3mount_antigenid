@@ -1,20 +1,11 @@
-#!/bin/bash
 mkdir /shared/s3mnt
-
 chmod 777 /shared/s3mnt
-
-## for ubuntu
 echo Y | sudo apt-get install libfuse-dev libcurl4-openssl-dev libxml++2.6-dev libssl-dev htop
-
-
-#git clone https://github.com/s3fs-fuse/s3fs-fuse
 cd /shared/s3fs-fuse/
 sudo ./autogen.sh
 sudo ./configure 
-
 sudo make
 sudo make install
-
 cd /shared
 sudo echo AKIAJOUE6CZYZYQENBJA:D3k6rYpBpVD6v6FOyw5o7NWwnvPmme6VYWcawgJC > /shared/passwd-s3fs
 sudo chmod 600 /shared/passwd-s3fs
